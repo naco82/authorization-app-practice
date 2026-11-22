@@ -1,3 +1,34 @@
+# authorization-app-practice
+
+## 概要
+
+COACHTECH 教材 Tutorial 10-3「認可機能 ハンズオン演習」で作成した成果物です。
+ポリシーを使って、投稿の作成者のみが編集・削除できる「投稿管理機能」を作成しました。
+
+## 使用技術
+
+- PHP 8.x
+- Laravel 10.x
+- Policy / Gate（認可）
+- Laravel Fortify（認証）
+
+## 学んだこと
+
+・認証（誰か）と認可（何ができるか）の違いと使い分け
+
+・Policy クラスでモデルに紐づく認可ロジックを定義する仕組み
+
+・Blade の @can ディレクティブとコントローラの $this->authorize()
+
+・今回は、Bladeに@canの構文を入れる際に、ヒントやテキストだけでは完成画像のようにはならなかったので、AIにコードの間違いチェックと追加コードを聞いて完成させました。
+
+## 動作確認
+
+動作確認: http://localhost にアクセスしてログイン
+
+ユーザーA: usera@example.com / password
+ユーザーB: userb@example.com / password
+
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
 <p align="center">
